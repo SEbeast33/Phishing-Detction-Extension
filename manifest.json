@@ -9,5 +9,11 @@
     "icons": {
         "128": "logo.png"
     },
-    "permissions": ["activeTab"]
+    "content_scripts":[
+        {"js":[ "background.js"],
+        "matches": ["*://www.google.com/"]}
+    ],
+    "permissions": ["activeTab"]   
+   
 }
+
